@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Usários</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body page="lista">
+    
+    <div id="listaRegistros">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Fone</th>
+                    <th> Gerenciar Registros </th>
+
+                </tr>
+            </thead>
+            <tbody id="listaRetegistrosBody"></tbody>
+        </table>
+        <!--Esta dive é contem um botão que torna visivel o formulario de cadastro com função onclick -->
+        <div>
+            <button onclick="vizualizar('cadastro', true)"> Novo usuário</button>
+        </div>
+
+    </div>
+
+    <form id="cadastroRegistro">
+
+        <div class="label"> 
+            <div>ID</div>
+            <div>
+                <input type="number" readonly id="id"/>
+            </div>
+        </div>
+
+        <div class="label">
+            <div>Nome</div>
+            <div>
+                <input  id="nome"/>
+            </div>
+        </div>
+
+        <div class="label">
+            <div>Fone</div>
+            <div>
+                <input type="tel" id="fone"/>
+            </div>
+            <div>
+                <button>Salvar</button>
+                <button onclick="vizualizar('lista')" class="cinza" type="button"> Cancelar </button>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+</html>
