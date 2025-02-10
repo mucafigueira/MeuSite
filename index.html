@@ -31,30 +31,30 @@
 
     </div>
 
-    <form id="cadastroRegistro">
+    <form name="dados" id="cadastroRegistro" method="POST" date-netlify="true">
 
         <div class="label"> 
             <div>ID</div>
             <div>
-                <input type="number" readonly id="id"/>
+                <input type="number"  id="id"/>
             </div>
         </div>
 
         <div class="label">
             <div>Nome</div>
             <div>
-                <input  id="nome"/>
+                <input type="text"  id="nome"/>
             </div>
         </div>
 
         <div class="label">
             <div>Fone</div>
             <div>
-                <input type="tel" id="fone"/>
+                <input type="txt" id="fone"/>
             </div>
             <div>
                 <button>Salvar</button>
-                <button onclick="vizualizar('lista')" class="cinza" type="button"> Cancelar </button>
+                <button type="submit" onclick="vizualizar('lista')" class="cinza" type="button"> Cancelar </button>
             </div>
         </div>
 
