@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="website de  Aguinaldo Muca Figueira, programação, mucafigueira, marketing digital,  
+    Psicologo Clínico, ">
+    <title>Contato - Dr. Muca</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Dr. Muca</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Se você deseja marcar uma consulta, solicitar um serviço ou tirar dúvidas, entre em contato comigo pelos canais abaixo.</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/message/U6OA6DAS3LLSH1" class="btn">Enviar Mensagem</a>
+                </div>
+                <div class="contact-item">
+                    <h3>E-mail</h3>
+                    <a href="Aguinaldo: aguinaldomuca@gmail.com" class="btn">Enviar E-mail</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Telefone</h3>
+                    <button onclick="window.location.href='tel: +244 934 815 201';" class="btn" >
+                        Ligar
+                    </button>
+                </div>
+            </div>
+
+            <h2>Ou envie uma mensagem:</h2>
+            <form name="contact" method="POST" id="contact-form" datenetlify>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="mensagem" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Muca - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

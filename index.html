@@ -1,63 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usários</title>
+    <meta name="description" content="website de  Aguinaldo Muca Figueira, programação,  mucafigueira, marketing digital,  
+    Psicologo Clínico, ">
+    <title> Dr. Muca - Biografia & Serviços</title>
     <link rel="stylesheet" href="style.css">
-   
 </head>
- <body page="lista">
-    
-    <div id="listaRegistros">
+<body>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Fone</th>
-                    <th> Gerenciar Registros </th>
-
-                </tr>
-            </thead>
-            <tbody id="listaRetegistrosBody"></tbody>
-        </table>
-        <!--Esta dive é contem um botão que torna visivel o formulario de cadastro com função onclick -->
-        <div>
-            <button onclick="vizualizar('cadastro', true)"> Novo usuário</button>
+    <!-- Header com Navegação -->
+    <header>
+        <div class="container">
+            <h1>Dr. Muca</h1>
+            <nav>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-    </div>
-
-    <form name="dados" id="cadastroRegistro" method="POST" date-netlify="true">
-
-        <div class="label"> 
-            <div>ID</div>
-            <div>
-                <input type="number"  id="id"/>
+    <!-- Seção Hero -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="img/perfil.jpg" alt="Foto de Dr. Muca">
+                <div>
+                    <h2>Bem-vindo ao meu espaço profissional</h2>
+                    <p>Psicólogo clínico, professor e desenvolvedor web. Conheça mais sobre meu trabalho e serviços.</p>
+                    <a href="#contato" class="btn">Fale Comigo</a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="label">
-            <div>Nome</div>
-            <div>
-                <input type="text"  id="nome"/>
+    <!-- Seção de Serviços -->
+    <section id="servicos">
+        <div class="container">
+            <h2>Meus Serviços</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Psicologia Clínica</h3>
+                    <p>Atendimento psicológico para diferentes necessidades emocionais e comportamentais.</p>
+                </div>
+                <div class="service">
+                    <h3>Análises Laboratoriais</h3>
+                    <p>Consultoria e ensino em técnicas laboratoriais e diagnóstico clínico.</p>
+                </div>
+                <div class="service">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de websites e sistemas personalizados para diferentes necessidades.</p>
+                </div>
+                <div class="service">
+                    <h3>Empreendidor Digital & Trafego Pago </h3>
+                    <p>Invista em anúncios inteligentes para atrair clientes  e maximize seus resultados.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="label">
-            <div>Fone</div>
-            <div>
-                <input type="txt" id="fone"/>
-            </div>
-            <div>
-                <button>Salvar</button>
-                <button type="submit" onclick="vizualizar('lista')" class="cinza" type="button"> Cancelar </button>
-            </div>
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Fale comigo pelo WhatsApp ou e-mail.</p>
+            <a href="https://wa.me/message/U6OA6DAS3LLSH1" class="btn">WhatsApp</a>
+            <a href="contacto.html" class="btn">E-mail</a>
         </div>
+    </section>
 
-    </form>
-    <script src="main.js"></script>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Aguinaldo Muca Figueira - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script defer src="script.js"></script>
 </body>
 </html>
