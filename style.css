@@ -480,6 +480,60 @@ Footer {
         margin-top: 14px;
     }
 
+   /* Seção Sobre */
+
+#sobre h2, #sobre p{
+   
+    margin-left: 1rem;
+    margin-right: 2rem;
+    color: #504f4f;
+    
+}
+
+#sobre h2{
+    margin-top: 8rem;
+    margin-bottom: none; 
+}
+
+#sobre img{
+    position: fixed; 
+    top: 10px;
+    left: 78%;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
+
+#missao .grid{
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#missao .grid .color {
+    margin-top: 10px;
+    margin: 0 10px; 
+}
+
+.icone-service {
+    font-size: 10px;
+}
+
+
+.history {
+    padding: 0 12px;
+    text-align: Justify;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
