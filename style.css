@@ -1,10 +1,9 @@
 /* Reset e Configurações Gerais */
-•	{
+
+html{
     Margin: 0;
     Padding: 0;
     Box-sizing: border-box;  
-}
-html{
     scroll-behavior: smooth;
 }
 
@@ -13,13 +12,16 @@ Body {
     font-family: Arial, Helvetica, sans-serif; 
     background-color: #f8f9fa;
     color: #333;
+     Margin: 0;
+    Padding: 0;
+ 
 }
 
 /* Cabeçalho Fixo */
 Header {
     background: linear-gradient(130deg, #007BFF, #0056b3);
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,7 +33,8 @@ Header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 20px;
+ 
 }
 
 Header ul {
@@ -56,6 +59,7 @@ Header ul li a:hover {
 
 /* Seção Hero */
 #hero {
+    width: 100%;
     padding: 100px 0;
     background: url("img/img-backgroundPrincipal.jpg") no-repeat center center/cover;
     color: #fff;
@@ -66,7 +70,7 @@ Header ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+  
 }
 
 #hero img {
@@ -113,6 +117,7 @@ Header ul li a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding: 0 10px;
     margin-top: 20px;
 }
 
