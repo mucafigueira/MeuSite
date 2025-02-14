@@ -415,3 +415,71 @@ Footer {
     background: #0056b3;
 }
 
+/*Estelização para smrtphones */
+
+@media screen and (max-width: 668px) {
+    header .container{
+        display:block;
+        text-align: center;    
+        padding-right: 10rem;   
+    }
+
+
+
+    header .container h1{
+        font-size: 30px;
+  
+    }
+    header .container li {
+        margin-left: none
+    }
+    header nav ul li a {
+        font-size: 16px;
+        margin-bottom: 4rem;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+
+    #hero{
+      width: 100%;
+    }
+
+    #hero .hero-content {
+        display: inline-block; 
+        margin: none; 
+    }
+
+    #hero img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 14rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .title {
+        width: 100%;
+
+    }
+
+    #servicos .services-grid {
+        display: block; 
+    }
+
+    #servicos .services-grid .service {
+        margin-top: 14px;
+    }
+
+
+
+
+
+
+
+
+}
