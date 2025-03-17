@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aguinaldo Muca Figueira (Dr. Muca) - Psicólogo Clínico, Bioanalista, Programador de sistema web e websites,  Professor em 
+    Análises Clínicas. Ofereço serviços de psicologia e conteúdos educativos na área da saúde.">
+    <meta name="keywords" content="Dr. Muca, Aguinaldo, Figueira Muca, Programador, Kiwaba, Nzoji,
+     Malanje, Angola, canâmbua Web, Site, WebSite, Sistema Web, Psicologia, Análises Clínicas, Bioanálise,
+      Hematologia, Parasitologia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Aguinaldo Muca Figueira (Dr. Muca) - Psicólogo Clínico e Bioanalista">
+    <meta property="og:description" content="Atendimento psicológico online e conteúdos educativos na área da saúde. Programação">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/a/ACg8ocKahTUzSD-ynp0I2V-3cpddXn1i9gDnAyO8yE2La1Dj3eMEtP_b=s96-c-rg-br100">
+    <meta property="og:url" content="https://www.mucafigueira.site">
+    <meta name="author" content="Aguinaldo Muca Figueira">
+    
+    <title>Agendar consulta| Dr. Muca</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    
+</head>
+<body>
+    <section class="agendarConsulta">
+        <div class="title">
+            <a href="index.html" class="back"> <i class="fas fa-arrow-left"></i></a>
+            <h4>Cuide da Sua Saúde Mental - Agenda Seu <br> Aconselhamento Piscolólogico Hoje</h4>
+        </div>
+         
+        <div class="text">
+            <p> Sente-se sobrecarregado(a) ou precisa de alguém para ouvir sem julgamentos?
+                O aconselhamento psicológico pode ajudá-lo(a) a encontrar equilibrio e bem-estar.
+            </p>
+
+           <ul>
+            <li> &#10003; Atendimento confidencial</li>
+            <li> &#10003; Apoio profissional para suas necessidades</li>
+            <li> &#10003; Estratégias eficazes para seu bem estar</li>
+           </ul>
+
+             <p><strong>Reserve um momento para você!</strong> Agenda agora sua consulta e
+                 comece a transformação que merece, começa a preenchendo o formulário abaixo: </p>
+        </div>
+            
+        <div class="dadosPessoais">
+            
+            <form action="https://formspree.io/f/xaneyvja" method="post">
+                <h3><span>1 -</span> Informações Pessoais</h3>
+                <label for="nameConpleto" class="required">Nome Completo</label>
+                <input type="text" name="nameConpleto" id="nameConpleto" required>
+                <label for="idade" class="required">Data de Nascimento</label>
+                <input type="date" name="idade" id="idade" required>
+                <label for="tel" class="required">Contacto (Telelone ou Email)</label>
+                <input type="text" name="tel" id="tel" required>
+                <label for="genero" class="required">Gênero</label>
+                <select name="genero"  id="genero" required>
+                    <option value="" disabled selected>Seleciona seu gênero</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="TransgeneroMasculino">Transgênero Masculino</option>
+                    <option value="TransgeneroFeminino">Transgênero Feminino</option>
+                </select>
+                <label for="endereco" class="required">Enderço (cidade ou País)</label>
+                <input type="text"  id="endereco" required>
+
+                <h3><span>2 -</span> Motivo do Aconselhamento</h3>
+
+                <label for="motivo" class="required">Porque quer aconselhamento psicológico?</label>
+                <textarea name="motivo" id="motivo" required></textarea>
+                <label for="tempo" class="required">Há quanto tempo está enfrentando essa situação?</label>
+                <select name="tempo" id="tempo" required>
+                    <option value="" disabled selected>Seleciona o tempo</option>
+                    <option value="Dias">Dias</option>
+                    <option value="Semanas">Semanas</option>
+                    <option value="Meses">Meses</option>
+                    <option value="Anos">Anos</option>
+                </select>
+
+                <label for="prejudicado" class="required">Como essa situação afeta sua vida diária?</label>
+                <textarea  id="prejudicado" required></textarea>
+
+                <h3><span>3 -</span> Horário de atendimento de preferência</h3>
+
+                <label for="hora" class="required"> A que hora pretendes ser atendido?</label>
+                <select name="hora" id="hora" required>
+                    <option value="" disabled selected>Seleciona sua hora disponível </option>
+                    <option value="timeOne">10 a 11 horas</option>
+                    <option value="timeTwo">16 a 17 horas</option>
+                </select>
+
+                <h3><span>4 -</span> Histórico Psicologico</h3>
+
+                <label for="HistoryPsicologic" class="required"> Já passou por aconselhamento ou terapia antes?</label>
+                <select name="HistoryPsicologic" id="HistoryPsicologic" required>
+                    <option value=""disabled selected>Seleciona uma opção</option>
+                    <option value="Sim/terapia">Sim</option>
+                    <option value="SemTerapia">Não</option>
+                </select>
+
+                <label for="diagnostico" class="required">Já recebeu algum diagnóstico psicologico?</label>
+                <input type="text" name="diagnostico" id="diagnostico" required>
+
+                <label for="medicamento" class="required">Está em uso de medicação? Se a resposta for 'SIM', diz quais medicamentos?</label>
+                <input type="text" name="medicamento" id="medicamento" required>
+
+                <h3><span>5 -</span>Consentimento e Política</h3>
+
+                <div class="politica">
+                    <input type="checkbox" class="checkbox" name="aceite-termo" id="aceite-termo" required>
+                    <label for="aceite-termo" class="required">
+                        Aceito as <button class="btnOpenWindow colorLink ">politicas de privacidade</button>   
+                    </label>
+                </div>
+
+                <div class="form-btns">
+                    <button type="submit" class="btn">Solicitar aconselhamento</button>
+                    <button type="reset" class="btn btn-reset">Limpar Dados</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    </body>
+</html>
