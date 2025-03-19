@@ -33,6 +33,7 @@
 
 body {
    display: none;
+   
 }
 
 
@@ -61,12 +62,23 @@ body {
         background-color: var(--navbarColor);
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-family: 'fontTitle';
         position: fixed;
         top: 0;
         width: 100%;
-        padding: 1.1rem 1.6rem;
+        padding: 1.1rem 1.4rem;
         z-index: 1000; 
+     }
+
+     .navbar img {
+      width: 38px;
+      height: 34px;
+     }
+
+     .descrition {
+      color: var(--backgroundDivsBtn);
+      font-weight: bolder;
      }
 
 
@@ -93,13 +105,27 @@ body {
       margin-top: 2rem; 
      }
 
+     .infoPerfil .px {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+     }
+
+     .marginbtn-right {
+       margin: 0 0.4rem;
+       font-size: 0.8rem;
+       border-radius: 0;
+       padding: 0.4rem 0.1rem;
+       text-align: center;
+       color: var(--fontColorTitle);
+     } 
+
      a {
       text-decoration: none;
       color: var(--fontColorTitle);
      }
 
      .fonte {
-       font-size: 1.0rem;
+       font-size: 0.9rem;
        line-height: 1;
      }
 
@@ -138,19 +164,18 @@ body {
      }
 
      .text {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
      }
 
      .consentimento .title {
        padding: 0 1.8rem;
        padding-top: 2.8rem;   
-       
     }
-/*-------------------------------------------------------------------------*/
+
 
     /*Title h4 of top*/
      header .navbar h3 {
-        margin-left: 14vw;
+         
         margin-top: 0.6rem;
         color: var(--fontColorTitle);
      }
@@ -276,7 +301,7 @@ body {
 
      header .infoPerfil p{
       font-family: 'fontParagraph';
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: var(--fontColorTitle);
       margin-bottom: 1.3rem;
      }
@@ -290,11 +315,10 @@ body {
       width: 92%;
       margin: 0 auto;
       margin-top: 2rem;
-      border-radius: 10px;
     }
 
     section .pAreas h4 {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: lighter;
       text-align: center;
       color: #faf5e8;
@@ -1240,32 +1264,62 @@ span {
   border-bottom: 1px solid #0404c7;
 }
 
+/*Estelizar os slider*/
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  margin-top: 2rem;
+  overflow: hidden;
+ 
+}
+
+.slide {
+  font-family: 'fontParagraph';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.color {
+  color:#0000ff;
+  font-weight: bolder;
+}
+
+.slide img {
+  width: 30%;
+  height: 100%;
+}
+
+.slide p {
+  margin: 0.6rem 0.8rem;
+  font-size: 0.2rem;
+
+}
+
+/* Quando o slide está ativo */
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Quando o slide sai da tela à esquerda */
+.slide.exit {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
 
   
 
   
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

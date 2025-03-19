@@ -19,7 +19,15 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/mobile.css">
-    
+      <!-- Analytics google, para saber quantos quantos visitaram o site -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3J81P2E52"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K3J81P2E52');
+</script> 
 </head>
 <body>
     <section class="agendarConsulta">
@@ -109,7 +117,7 @@
                 <div class="politica">
                     <input type="checkbox" class="checkbox" name="aceite-termo" id="aceite-termo" required>
                     <label for="aceite-termo" class="required">
-                        Aceito as <button class="btnOpenWindow colorLink ">politicas de privacidade</button>   
+                     Aceito as <a href="politicaDePrivacidade.html" class="colorLink">politicas de privacidade</a> 
                     </label>
                 </div>
 
