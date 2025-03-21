@@ -36,7 +36,6 @@ body {
    
 }
 
-
 @media(max-width: 650px){
 /*Reset*/
     *{
@@ -410,20 +409,17 @@ body {
 
     }
 
-
     /*configuração do footer*/
-
     footer {
       font-family: 'fontParagraph'; 
       font-size: 1.0rem;
-      height: 82vh;
+      height: 70vh;
       padding: 1.4rem 0.6rem;
       margin-top: 0.5rem;
       background-color: var(--fontColorTitle);
       color: #faf5e8;
       z-index: -1;
     } 
-
 
     footer .footer-social {
      width: 100%;
@@ -525,13 +521,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease-out;
-
   }
 
   .dados img:hover {
     transform: scale(1.1);
   }
-
 
    /*Estelização dos elemntos da livraria*/
 
@@ -755,7 +749,6 @@ form input:focus, form textarea:focus, select:focus {
    margin-top: 4.8rem;
 }
 
-
 .agendarConsulta .title {
   background-color: #f4b183;
   padding: 1.4rem; 
@@ -767,7 +760,6 @@ form input:focus, form textarea:focus, select:focus {
   z-index: 1000;
 
 }
-
 .text p{
   font-family: 'fontParagraph';
   margin: 0.9rem 1.4rem;
@@ -820,11 +812,10 @@ form input:focus, form textarea:focus, select:focus {
   display: grid;
   grid-template-columns: 1fr;
  
- 
 }
 
 .containerTwo .title {
-  margin-top: 1.2rem;
+  margin-top: 2rem;
   font-family: 'fontTitle';
   font-size: 1.2rem;
   text-align: center;
@@ -839,30 +830,39 @@ form input:focus, form textarea:focus, select:focus {
 
 }
 
- .foto {
-  background: url('../img/computer-header.png') no-repeat center center/cover;
-  padding: 0.4rem;
-  width: 100%;
-  height: 50vh;
-  padding: 2rem;
- 
-}
-
 .containerTwo .btns {
  position: relative;
  bottom: 2rem;
 }
 
 .btnWeb {
-  border-radius: 0;
+  border-radius: 5px;
   text-align: center;
-  padding: 1rem;
+  padding: 0.6rem;
   margin-bottom: 1.3rem;
   font-size: 1.2rem;
 }
 
 .margin-topFooter {
   margin-top: 0;
+}
+
+.fotoComputer  {
+  background-color: transparent;
+  width: 100%;
+  height: 60vh;
+  padding: 1.2rem;
+  margin-top: 2rem;
+}
+
+.fotoComputer img {
+  width: 100%;
+  height: 40vh;
+}
+
+.btnWeb {
+  position: relative;
+  bottom: 3rem;
 }
 
 /*Form de solicitação de website*/
@@ -906,8 +906,6 @@ form input:focus, form textarea:focus, select:focus {
   color: var(--backgroundDivsBtn);
   font-weight:lighter;
 }
-
-
 
 .containerTree {
   font-family: 'fontParagraph';
@@ -1314,6 +1312,64 @@ span {
 .slide.exit {
   opacity: 0;
   transform: translateX(-100%);
+}
+
+
+/*Estelização da table*/
+
+.outrosLivros {
+  font-family: 'fontTitle';
+  color: var(--fontColorTitle);
+  font-size: 0.9rem;
+  background-color: var(--backgroundDivsBtn);
+  padding: 0.2rem 0;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+table {
+  width: 100%;
+  margin-right: 0.6rem;
+  border-collapse: collapse;
+  background-color: #f5e6db;
+}
+
+th, td {
+  font-family: 'fontParagraph';
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  text-align: left;
+  border-bottom: 1px dotted var(--backgroundDivsBtn);
+}
+
+th {
+  background-color: var(--backgroundDivsBtn);
+}
+
+tr {
+  color: #1855fdec;
+  font-size: 0.9rem;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.btnDownload {
+  padding: 0.2rem 0.4rem;
+  background-color: var(--backgroundDivsBtn);
+  border-radius: 50%;
+  text-align: center;
+  color:#5f5e5e66;
+}
+
+.btnDownload:hover {
+   background-color: var(--navbarColor);
+   color:#000000e7;
 }
 
 
