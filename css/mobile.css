@@ -267,7 +267,7 @@ body {
      /*Foto do Perfil */
      header .photoPerfil img {
         position: absolute;
-        top: 9rem;
+        top: 7rem;
         left: 1.2rem;
         height: 5.2rem;
         width: 5rem;
@@ -414,6 +414,7 @@ body {
     footer {
       font-family: 'fontParagraph'; 
       font-size: 1.0rem;
+      width: 100%;
       height: 80vh;
       padding: 1.4rem 0.6rem;
       margin-top: 0.5rem;
@@ -585,7 +586,40 @@ body {
     color: #daa804;
     font-size: 14px;
   }
-  
+
+
+
+  /*Estelização da Lista */
+
+.outrosLivros {
+  font-family: 'fontTitle';
+  color: var(--fontColorTitle);
+  font-size: 0.9rem;
+  background-color: var(--backgroundDivsBtn);
+  padding: 0.2rem 0;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.containerLista {
+  padding: 2rem;
+}
+
+.containerLista ul {
+  list-style: none;
+}
+
+.containerLista li, .containerLista li a{
+  color: #3d6ffa;
+  border-bottom: 1px dotted var(--backgroundDivsBtn);
+  padding: 0.2rem;
+
+}
+
+.containerLista li:hover{
+  background-color: var(--navbarColor);
+}
+
 
 /*NOTA*/
 .livraria .nota {
@@ -601,7 +635,13 @@ body {
   z-index: 1000;
 }
 
-.livraria .nota a {
+.nota2 {
+  padding: 0.8rem;
+  font-family: 'fontParagraph';
+  color: var(--fontColorTitle);
+}
+
+.livraria .nota a, .nota2 a{
   color: blue;
  border-bottom: 1px solid blue;
 }
@@ -858,7 +898,7 @@ form input:focus, form textarea:focus, select:focus {
 
 .fotoComputer img {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
 }
 
 .btnWeb {
@@ -934,7 +974,6 @@ form input:focus, form textarea:focus, select:focus {
    text-align: center;
    
 }
-
 
 .service-cosnsult {
   display: grid;
@@ -1127,8 +1166,6 @@ span {
   z-index:1001;
 }
 
-
-
 .modaleTwo {
   height: 94vh;
 }
@@ -1316,67 +1353,6 @@ span {
 }
 
 
-/*Estelização da table*/
-
-.outrosLivros {
-  font-family: 'fontTitle';
-  color: var(--fontColorTitle);
-  font-size: 0.9rem;
-  background-color: var(--backgroundDivsBtn);
-  padding: 0.2rem 0;
-  text-align: center;
-  margin-bottom: 0.8rem;
-}
-
-table {
-  width: 100%;
-  margin-right: 0.6rem;
-  border-collapse: collapse;
-  background-color: #f5e6db;
-}
-
-th, td {
-  font-family: 'fontParagraph';
-  font-size: 0.9rem;
-  padding: 0.2rem;
-  text-align: left;
-  border-bottom: 1px dotted var(--backgroundDivsBtn);
-}
-
-th {
-  background-color: var(--backgroundDivsBtn);
-}
-
-tr {
-  color: #1855fdec;
-  font-size: 0.9rem;
-}
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #ddd;
-  cursor: pointer;
-}
-
-.btnDownload {
-  padding: 0.2rem 0.4rem;
-  background-color: var(--backgroundDivsBtn);
-  border-radius: 50%;
-  text-align: center;
-  color:#5f5e5e66;
-}
-
-.btnDownload:hover {
-   background-color: var(--navbarColor);
-   color:#000000e7;
-}
-
-
-  
-
-  
 
 
 }
